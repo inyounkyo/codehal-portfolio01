@@ -7,11 +7,9 @@ const Header = () => {
         <a href="#" className={styles.logo}>
           UtobuRocker.
         </a>
-        <button
-          id="menu-open-button"
-          className="fas fa-bars"
-          onClick={() => {}}
-        ></button>
+        
+        <i className="fas fa-bars" id={styles["menu-icon"]}></i>
+        
         <nav>
           <a href="#" className={styles.active}>
             Home

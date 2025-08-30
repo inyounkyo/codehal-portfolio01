@@ -32,3 +32,9 @@ nav a:hover {
 .active {
   color: var(--main-color);
 }
+
+#menu-icon {
+  font-size: 4rem;
+  color: var(--white-color);
+  display: none;
+}
