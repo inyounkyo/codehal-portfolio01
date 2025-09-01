@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "ifa": "fab fa-css3-alt",
+    "pjt": "Web Development",
+    "content": "Create A Complete Responsive Personal Portfolio Website Using HTML CSS And Javascript."
+  },
+  {
+    "id": 2,
+    "ifa": "fa fa-paint-brush",
+    "pjt": "UI/UX Design",
+    "content": "Create A Complete Responsive Personal Portfolio Website Using HTML CSS And Javascript."
+  },
+  {
+    "id": 3,
+    "ifa": "fas fa-palette",
+    "pjt": "Graphic Design",
+    "content": "Create A Complete Responsive Personal Portfolio Website Using HTML CSS And Javascript."
+  },
+  {
+    "id": 4,
+    "ifa": "fa fa-line-chart",
+    "pjt": "SEO",
+    "content": "Create A Complete Responsive Personal Portfolio Website Using HTML CSS And Javascript."
+  },
+  {
+    "id": 5,
+    "ifa": "fa fa-sliders",
+    "pjt": "Video Editing",
+    "content": "Create A Complete Responsive Personal Portfolio Website Using HTML CSS And Javascript."
+  },
+  {
+    "id": 6,
+    "ifa": "fa fa-camera",
+    "pjt": "Photography",
+    "content": "Create A Complete Responsive Personal Portfolio Website Using HTML CSS And Javascript."
+  }
+]
