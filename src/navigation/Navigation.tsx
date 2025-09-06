@@ -3,6 +3,7 @@ import Layout from "../layout/Layout";
 import Home from "../pages/Home";
 import Services from "../pages/Services";
 import Resume from "../pages/Resume";
+import Portfolio from "../pages/Portfolio";
 
 const Navigation = () => (
   <BrowserRouter>
@@ -12,6 +13,7 @@ const Navigation = () => (
         <Route path="/home" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Route>
     </Routes>
   </BrowserRouter>

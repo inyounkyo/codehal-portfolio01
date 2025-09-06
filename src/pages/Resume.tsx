@@ -1,24 +1,17 @@
 import { useReducer } from "react";
 
+import type { Action, ButtonTy, ContentTy } from "../lib/type/ResumeType";
+
 import Experience from "../components/Experience";
 import Education from "../components/Education";
 import Skills from "../components/Skills";
 import AboutMe from "../components/AboutMe";
 
 import styles from "../styles/Resume.module.css";
+
 import resumeListData from "../data/resume.json";
 
-type ButtonTy = {
-  id: number;
-  pjtName: string;
-  css: string;
-  content: string;
-  actDispatch: (actObj: { type: number; act: object }) => void;
-};
-
-const initialState = { act: resumeListData[0], CompoName: Experience };
-
-function reducer(state, action) {
+function reducer(state, action: Action) {
   switch (action.type) {
     case 0: {
       return { act: action.act, CompoName: Experience };
@@ -55,13 +48,6 @@ function ButtonActive({ actState, actDispatch }: ButtonTy) {
   return b;
 }
 
-type ContentTy = {
-  id: number;
-  pjtName: string;
-  css: string;
-  content: string;
-};
-
 const Content = ({ actState, children }: ContentTy) => {
   const s = actState.css;
   return (
@@ -78,6 +64,8 @@ const Content = ({ actState, children }: ContentTy) => {
     </div>
   );
 };
+
+const initialState = { act: resumeListData[0], CompoName: Experience };
 
 const Resume = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
