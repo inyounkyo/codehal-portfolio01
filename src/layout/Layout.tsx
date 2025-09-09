@@ -7,13 +7,12 @@ const Layout = () => {
   const params = useParams();
 
   useEffect(() => {
-    console.log(params);
+    
   });
 
   return (
     <>
       <Header />
-
       <Outlet />
     </>
   );
