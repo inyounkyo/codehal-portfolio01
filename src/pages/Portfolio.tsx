@@ -1,26 +1,10 @@
 import React, { useState, useRef } from "react";
 
+import type { ImgType, portDataTy } from "../lib/type/PortfolioType";
+
 import portfolioData from "../data/portfolio.json";
 
 import styles from "../styles/Portfolio.module.css";
-
-
- type ImgType = {
-      btnImgMoveHandler:  (btnId: string) => void
-      btnRef: React.Ref<HTMLButtonElement | null>
-      currState: number
-  }
-
- type portDataTy = {
-  portData:{
-    id: number;
-    numb: string;
-    tech: string;
-    content: string;
-    img: string;
-  }
-  
- }
 
 const PortfolioContainer = () => {
   const [currState, setCurrState] = useState<number>(2);
